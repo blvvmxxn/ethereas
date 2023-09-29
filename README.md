@@ -1,1 +1,2 @@
-# dotfiles
+# --// hyprland · dotfiles //--
+![screenshot](screenshot.png)
