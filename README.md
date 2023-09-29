@@ -1,2 +1,3 @@
-# --// hyprland · dotfiles //--
+### hyprlanddotfiles
+##### --// hyprland · dotfiles //--
 ![screenshot](screenshot.png)
