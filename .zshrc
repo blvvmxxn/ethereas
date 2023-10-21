@@ -1,7 +1,3 @@
-#----- shell-prompt
-autoload -U colors && colors
-PS1="%{$fg[magenta]%}%M%{$reset_color%}%% "
-
 #----- auto/tab complete
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -12,8 +8,13 @@ compinit
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 alias grep='grep --color=auto'
-alias pl=mpv
 alias vim=nvim
 alias nfetch=fastfetch
-alias tv=ttvchecker
-alias yta='yt-dlp --extract-audio --audio-format opus'
+alias yt='yt-dlp --extract-audio --audio-format opus --embed-thumbnail'
+alias pl='mpv --ytdl-format="(bestvideo[height<=1080]+bestaudio)[ext=webm]/bestvideo[height<=1080]+bestaudio/best[height<=1080]/bestvideo+bestaudio/best" --force-window=immediate'
+
+#----- functions
+func mkcd() {
+    mkdir -p "${1}"
+    cd "${1}"
+}
