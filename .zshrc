@@ -10,8 +10,9 @@ alias ll='ls -lh --color=auto'
 alias grep='grep --color=auto'
 alias vim=nvim
 alias nfetch=fastfetch
-alias yt='yt-dlp --extract-audio --audio-format opus --embed-thumbnail'
-alias pl='mpv --ytdl-format="(bestvideo[height<=1080]+bestaudio)[ext=webm]/bestvideo[height<=1080]+bestaudio/best[height<=1080]/bestvideo+bestaudio/best" --force-window=immediate'
+alias pl='mpv'
+alias ytaudio='yt-dlp --extract-audio --audio-format opus --embed-thumbnail'
+alias yt='mpv --ytdl-format="(bestvideo[height<=1080]+bestaudio)[ext=webm]/bestvideo[height<=1080]+bestaudio/best[height<=1080]/bestvideo+bestaudio/best" --force-window=immediate'
 
 #----- functions
 func mkcd() {
